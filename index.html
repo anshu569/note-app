@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Link for font awesome library -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" type="text/css">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <link href="https://fonts.googleapis.com/css?family=Chicle|Lato|Monoton" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>A note app using web storage</title>
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="row">
+            <div class="col-12 col-md-12 col-lg-12">
+                <h1 class="text-center txt-shadow">MY NOTE APP</h1>
+                <hr>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12 col-md-6 col-lg-6">
+                <div class="editor-container text-center">
+                    <input type="text" placeholder="Note Title" class="note-title-box form-control">
+                    <br>
+                    <textarea placeholder="Type something..." rows="4" class="note-text-box form-control"></textarea>
+                    <br>
+                    <button class="submit-button btn btn-primary">Submit</button>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-6">
+                <div class="notes-container">
+                    <div class="note boxyfy">
+                        <h3 class="note-heading text-center"></h3>
+                        <hr>
+                        <p class="note-content"></p>
+
+                        <button type="button" class="delete-note btn btn-default btn-sm">
+                            <span class="glyphicon glyphicon-trash"></span> Trash
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <br>
+        <br>
+
+        <div class="row">
+            <div>
+                <div class="boxyfy">
+                    <p class="fhead text-center">
+                        Features of this Note App
+                    </p>
+                    <hr>
+                    <ul>
+                        <li>
+                            <strong>Permanent Storage of the data:</strong>
+                            <p>
+                                The data saved in this note app do not get deleted on reloading the browser tab.
+                            </p>
+                        </li>
+
+                        <li>
+                            <strong>No Use of any Backend technology:</strong>
+                            <p> No any Backend technology has been used to creat this app. The data is not
+                                sent to any server so, no any database is used. </p>
+                        </li>
+
+                        <li>
+                            <strong>HTML5 Web Storage:</strong>
+                            <p>This app uses HTML5 Web Storage feature. With web storage, web applications can store
+                                data locally within the user's browser.
+
+                                Before HTML5, application data had to be stored in cookies, included in every server
+                                request. Web storage is more secure, and large amounts of data can be stored locally,
+                                without affecting website performance.
+
+                                Unlike cookies, the storage limit is far larger (at least 5MB) and the information is
+                                never
+                                transferred to the server.
+
+                                Web storage is per origin (per domain and protocol). All pages, from one origin, can
+                                store and access the same data.</p>
+                        </li>
+
+                        <li>
+                            <strong>Local Storage Object:</strong>
+                            <p>
+                                The localStorage and sessionStorage properties allow to save key/value pairs in a web
+                                browser.
+
+                                The localStorage object stores data with no expiration date. The data will not be
+                                deleted when the browser is closed, and will be available the next day, week, or year.
+
+                                The localStorage property is read-only.
+                            </p>
+                        </li>
+
+
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <hr>
+    <div class="container-fluid">
+        <div class="row">
+            <div>
+                <footer class="footer text-center">
+                    <p class="footer-note">Made with
+                        <i class="fa fa-heart heart"></i> by Anshu Singh
+                        <br>singhanshu.jsr1998@gmail.com</p>
+
+                    <div class="contact-logo-holder">
+
+                        <a href="https://github.com/anshu569" class="contact-link" target="_blank">
+                            <i class="fa fa-github fa-2x contact-logo github"></i>
+                        </a>
+
+                    </div>
+                </footer>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
